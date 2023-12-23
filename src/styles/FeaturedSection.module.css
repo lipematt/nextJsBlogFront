@@ -16,15 +16,16 @@
     bottom: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinhar os itens à esquerda */
-    justify-content: flex-start; /* Alinhar os itens no topo */
-    padding: 16px; /* Adicionar padding para dar espaço entre o conteúdo e as bordas da seção */
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px;
+    background: radial-gradient(circle, rgba(67, 67, 67, 0) 30%, rgba(67, 67, 67, 0.5) 90%);
   }
   
   .textContainer {
     position: relative;
     margin-bottom: 1rem;
-    text-align: left; /* Alinhar o texto à esquerda */
+    text-align: left;
   }
   
   .titleContainer {
