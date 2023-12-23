@@ -4,26 +4,19 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-}
-
-.siteTitle {
-    background: linear-gradient(45deg, rgb(4, 159, 187) 0%, rgb(80, 246, 255) 100%);
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
-  }
-  
-
-h2 {
-    font-weight: 100;
+    background: #434343;
 }
 
 p {
     font-weight: 300;
 }
 
-.bg-hero {
-    background: #0074D9;
+.roundedDefault {
+    border-radius: 14px;
 }
 
+.shadowDefault {
+    box-shadow: 0 8px 8px 0px rgba(0, 0, 0, 0.15), 0 0 4px rgba(0, 0, 0, 0.15);
+}
 
 
