@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from '../src/styles/FeaturedSection.module.css';
 
 const FeaturedSection = () => {

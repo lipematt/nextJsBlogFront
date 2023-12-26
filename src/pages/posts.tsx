@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import { Post } from '../../components/Post';
 import Search from '../../components/Search';
@@ -17,12 +16,23 @@ export default function Home(props) {
 }
 
 export const getServerSideProps = async () => {
-  const response = await fetch('http://localhost:3333/api/get/posts');
-  const data = await response.json();
+  try {
+    const response = await fetch('http://localhost:3333/api/get/posts');
+    const data = await response.json();
 
-  return {
-    props: {
-      posts: data.posts,
-    },
-  };
+    console.log(data);
+
+    return {
+      props: {
+        posts: data.posts,
+      },
+    };
+  } catch (error) {
+    console.error('Error fetching posts:', error);
+    return {
+      props: {
+        posts: [],
+      },
+    };
+  }
 };
