@@ -3,14 +3,23 @@ import { Inter } from 'next/font/google';
 import { Post } from '../../components/Post';
 import Search from '../../components/Search';
 import FeaturedSection from '../../components/FeaturedSection';
+import HotPosts from '../../components/HotPosts';
+
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home(props) {
   return (
-    <div className="p-8">
+    <div className="">
       <Search />
       <FeaturedSection />
+      <div className="hotPostContainer">
+
+        {props.posts.map((post) => (
+          <HotPosts key={post.id} post={post} />
+        ))}
+
+      </div>
     </div>
   );
 }

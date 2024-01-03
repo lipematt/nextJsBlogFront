@@ -4,7 +4,7 @@ import styles from '../src/styles/FeaturedSection.module.css';
 
 const FeaturedSection = () => {
   return (
-    <section className={`${styles.section} roundedDefault shadowDefault`}>
+    <section className={`${styles.section} roundedDefault shadowDefault p-8`}>
       <div className={`${styles.overlay} roundedDefault`}>
         <div className={styles.textContainer}>
           <div className={styles.titleContainer}>
