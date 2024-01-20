@@ -6,7 +6,7 @@ const HotPosts = ({ post }) => {
     <div className={styles.verticalRectanglePost}>
       <div className={`${styles.rectangle} shadowDefault roundedDefault`}>
         <div className={styles.postContent}>
-          <h2>{post.title}</h2>
+          <h2>{post.header}</h2>
           <p>{post.body}</p>
         </div>
       </div>

@@ -4,6 +4,7 @@ import { Post } from '../../components/Post';
 import Search from '../../components/Search';
 import FeaturedSection from '../../components/FeaturedSection';
 import HotPosts from '../../components/HotPosts';
+import Posts from '../../components/Posts';
 
 
 const inter = Inter({ subsets: ['latin'] });
@@ -11,8 +12,10 @@ const inter = Inter({ subsets: ['latin'] });
 export default function Home(props) {
   return (
     <div className="">
-      <Search />
-      <FeaturedSection />
+      <div className='p-5'>
+        <Search />
+        <FeaturedSection />
+      </div>
       <div className="hotPostContainer">
 
         {props.posts.map((post) => (
@@ -20,7 +23,13 @@ export default function Home(props) {
         ))}
 
       </div>
+      <div className='p-5'>
+        {props.posts.map((post) => (
+          <Posts key={post.id} post={post} />
+        ))}
+      </div>
     </div>
+    
   );
 }
 

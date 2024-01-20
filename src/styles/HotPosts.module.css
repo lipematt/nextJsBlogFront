@@ -5,6 +5,10 @@
     margin: 16px 0px;
   }
   
+  .verticalRectanglePost:first-child {
+    margin-left: 16px; 
+  }
+
   .rectangle {
     width: 100%;
     padding: 16px;

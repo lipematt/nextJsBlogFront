@@ -1,0 +1,19 @@
+/* Posts.module.css */
+
+.postContainer {
+    display: flex;
+    align-items: center;
+    margin: 16px;
+  }
+  
+  .imageContainer {
+    margin-right: 10px;
+  }
+  
+  .textContainer {
+    flex: 2;
+  }
+  
+  .iconContainer {
+    flex: 1;
+  }

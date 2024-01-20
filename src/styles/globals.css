@@ -24,3 +24,8 @@ p {
     overflow-x: auto;
   }
 
+.hotPostContainer::-webkit-scrollbar {
+    width: 0px;
+}
+
+
